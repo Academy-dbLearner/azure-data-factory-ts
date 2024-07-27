@@ -1,0 +1,9 @@
+{
+	"name": "adf-teamsoft-01",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0bc44309-fee0-4fa8-9b17-7dbeac10463b",
+		"tenantId": "9d524a39-30ac-4a41-9e2f-dd2563dbc78f"
+	}
+}

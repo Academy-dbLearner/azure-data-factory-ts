@@ -1,0 +1,20 @@
+{
+	"name": "DS_ADLS_PARQUET_Departamento",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADSL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "2-plata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

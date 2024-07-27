@@ -1,0 +1,38 @@
+{
+	"name": "PipelineDCC",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "SSIS-Azure/Proyecto SSIS-Azure/Package.dtsx",
+						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "SSISintegrationRuntimeADR",
+						"type": "IntegrationRuntimeReference"
+					},
+					"loggingLevel": "Basic"
+				}
+			}
+		],
+		"folder": {
+			"name": "Módulo 6"
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-07-23T00:47:13Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

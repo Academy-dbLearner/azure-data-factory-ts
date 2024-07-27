@@ -1,0 +1,32 @@
+{
+	"name": "DS_ADSL_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADSL",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Ruta": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Modulo 5"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().Ruta",
+					"type": "Expression"
+				},
+				"fileSystem": "bronce00"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
