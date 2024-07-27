@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQL_AdventureWorks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DBLEARNER-03\\SQL150DEV",
+			"database": "AdventureWorks",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "usr_integracion_adf",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlYjA0MzU2Mi1lMmY2LTQzOWMtYjRiMC0xOTVlZjYzMTczNzUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedRuntime01",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
